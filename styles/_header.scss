@@ -1,0 +1,20 @@
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    .logo {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+// borde göra nedan som grid...
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;  
+    .logo-icon-1 {
+        justify-self: flex-start;
+    .logo-icon-2 {
+        justify-self: flex-end;
+    }
+}
+} 
