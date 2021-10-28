@@ -56,6 +56,30 @@ body {
   text-align: center;
 }
 
+.content img {
+  margin: 3 rem auto;
+  width: 100%;
+  height: auto;
+}
+
+.content h4 {
+  color: #ddb96c;
+}
+
+.content h3 {
+  color: #ddb96c;
+}
+
+.content strong {
+  color: #ddb96c;
+}
+
+.content li {
+  list-style-type: none;
+  color: #999;
+  font-size: 18px;
+}
+
 @media (max-width: 780px) {
   .content h2 {
     font-size: 18px;

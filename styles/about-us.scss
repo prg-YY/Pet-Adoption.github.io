@@ -53,6 +53,26 @@ body {
   letter-spacing: -0.1px;
   text-align: center;
 }
+.content img {
+  margin: 3 rem auto;
+  width: 100%;
+  height: auto;
+}
+.content h4 {
+  color: $mian-color;
+}
+.content h3 {
+  color: $mian-color;
+}
+.content strong {
+  color: $mian-color;
+}
+.content li {
+  list-style-type: none;
+  color: $p-cl;
+  font-size: 18px;
+}
+
 @media (max-width: 780px) {
   .content h2 {
     font-size: 18px;
