@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Zen+Maru+Gothic:wght@300&display=swap");
+:root {
+  --left-right-shadow-color: 0px 10px 30px rgba(165, 135, 4, 0.979);
+  --transform: transform 0.4s ease;
+  --scale: scale(1.1);
+  --main-font-family: "Fascinate", sans-serif;
+  --second-font-family: "Zen+Maru+Gothic", sans-serif;
+}
+
+.container-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top-link h1 {
+  font-family: var(--second-font-family);
+  color: #ddb96c;
+  margin-top: 1rem;
+}
+
+.top-link a {
+  font-size: 32px;
+}
+
+.container-card h5,
+p {
+  font-family: var(--second-font-family);
+  color: #999;
+}
+
+.container-card img {
+  border-radius: 0.5rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  -webkit-transition: var(--transform);
+  transition: var(--transform);
+  cursor: pointer;
+}
+
+.container-card img:hover {
+  -webkit-box-shadow: 0px 5px 5px rgba(165, 135, 4, 0.979);
+          box-shadow: 0px 5px 5px rgba(165, 135, 4, 0.979);
+  -webkit-transform: var(--scale);
+          transform: var(--scale);
+}

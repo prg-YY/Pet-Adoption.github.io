@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Zen+Maru+Gothic:wght@300&display=swap");
+:root {
+  --left-right-shadow-color: 0px 10px 30px rgba(165, 135, 4, 0.979);
+  --transform: transform 0.4s ease;
+  --scale: scale(1.1);
+  --main-font-family: "Fascinate", sans-serif;
+  --second-font-family: "Zen+Maru+Gothic", sans-serif;
+}
+$backgrou-color: #f1f6fa;
+$mian-color: #ddb96c;
+$button-bg: #6c90dd;
+$button-hover-bg: #9ab4ec;
+$p-cl: #999;
+$white: #fff;
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.top-link h1 {
+  font-family: var(--second-font-family);
+  color: $mian-color;
+  margin-top: 1rem;
+}
+.top-link a {
+  font-size: 32px;
+}
+
+.container-card h5,
+p {
+  font-family: var(--second-font-family);
+  color: $p-cl;
+}
+.container-card img {
+  border-radius: 0.5rem;
+  flex-direction: row;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  transition: var(--transform);
+  cursor: pointer;
+}
+.container-card img:hover {
+  box-shadow: 0px 5px 5px rgba(165, 135, 4, 0.979);
+  transform: var(--scale);
+}
