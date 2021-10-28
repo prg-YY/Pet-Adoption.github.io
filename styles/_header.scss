@@ -1,20 +1,36 @@
 .header-wrapper {
+    background-color: #ddb96c;
+    padding: 30px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     .logo {
         display: flex;
         flex-direction: row;
+        align-items: flex-end;
+        padding: 10px;
+        &:hover{
+            color: #6c90dd;
+        }
+        &__icon {
+            margin-right: 10px;
+            color: white;
+        }
+        &__text {
+            font-family: var(--main-font-family);
+            font-size: 36px;
+            color: white;
+        }
     }
 }
 
-// borde göra nedan som grid...
-.icon-wrapper {
-    display: flex;
-    flex-direction: column;  
-    .logo-icon-1 {
-        justify-self: flex-start;
-    .logo-icon-2 {
-        justify-self: flex-end;
+.nav-link {
+    font-family: var(--second-font-family);
+    color: white;
+    &:hover {
+        background-color: #6c90dd;
+        color: white;
+        transform: transform 0.4s ease;
     }
 }
-} 

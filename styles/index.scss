@@ -1,1 +1,17 @@
 @import 'header';
+
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Zen+Maru+Gothic:wght@300&display=swap");
+
+:root {
+  --left-right-shadow-color: 0px 10px 30px rgba(165, 135, 4, 0.979);
+  --transform: transform 0.4s ease;
+  --scale: scale(1.1);
+  --main-font-family: "Fascinate", sans-serif;
+  --second-font-family: "Zen+Maru+Gothic", sans-serif;
+}
+$backgrou-color: #f1f6fa;
+$mian-color: #ddb96c;
+$button-bg: #6c90dd;
+$button-hover-bg: #9ab4ec;
+$p-cl: #999;
+$white: #fff;
