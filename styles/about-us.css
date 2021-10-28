@@ -101,6 +101,11 @@ body {
     line-height: 1.3;
   }
 }
+.top-link a {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
 .about-img.left {
   position: absolute;
   top: 40%;
@@ -309,9 +314,17 @@ body {
   font-weight: bold;
 }
 
+.footer img {
+  margin-right: 100px;
+}
+
 .footer img:hover {
   -webkit-transition: var(--transform);
   transition: var(--transform);
   -webkit-transform: var(--scale);
           transform: var(--scale);
+}
+
+.cat {
+  margin-top: 2rem;
 }
