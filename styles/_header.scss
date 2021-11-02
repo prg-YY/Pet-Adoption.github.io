@@ -34,3 +34,16 @@
         transform: transform 0.4s ease;
     }
 }
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .dropdown {
+        display: flex;
+    }
+    .nav {
+        display: none;
+    }
+}
