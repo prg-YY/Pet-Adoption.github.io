@@ -1,0 +1,46 @@
+@keyframes autoplay1 {
+    0% {
+        opacity: 0.0;
+    }
+    4% {
+        opacity: 1.0;
+    }
+    33% {
+        opacity: 1.0;
+    }
+    37% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+.slide-home {
+    height: 10em;
+    position: relative;
+}
+
+.slide1, .slide2, .slide3, .slide4 {
+    animation: 12s autoplay1 infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+}
+
+.slide1 {
+    animation-delay: 0s;
+}
+
+.slide2 {
+    animation-delay: 4s;
+}
+
+.slide3 {
+    animation-delay: 8s;
+}
+
+.slide4 {
+    animation-delay: 16s;
+}
