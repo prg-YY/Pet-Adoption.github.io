@@ -69,11 +69,13 @@ body {
 
 .btn {
     padding: 12px;
+    margin-top: 20px;
     margin-bottom: 0.6rem;
     background-color: $button-bg;
     margin-left: 0.5rem;
     border-radius: 28px 4px;
     transition: var(--transform);
+    color: white;
 }
 .btn:hover {
     box-shadow: var(--transform);
