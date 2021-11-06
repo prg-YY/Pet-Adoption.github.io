@@ -38,8 +38,6 @@ body {
   background: #fff;
   border-radius: 0.75rem;
   padding: 2.5rem;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
-  margin-top: -3rem;
 }
 
 .content h2 {
