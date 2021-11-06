@@ -1,0 +1,122 @@
+body {
+  background-color: #f1f6fa;
+}
+
+.container-fluid {
+  background-color: #ddb96c;
+  height: 12rem;
+}
+
+.entry-title, .card-title {
+  font-family: "Fascinate", sans-serif;
+  color: #fff;
+}
+
+.panel {
+  max-width: 800px;
+  position: relative;
+  top: -3rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
+}
+
+.panel-title, .collapse-text, .card-text, .panel-text {
+  font-family: "Zen+Maru+Gothic", sans-serif;
+  color: #999;
+}
+
+.panel-text {
+  padding: 0 1rem;
+}
+
+.btn, .btn-x {
+  background-color: #6c90dd;
+  border-radius: 28px 4px;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover, .btn-x:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  min-height: 370px;
+  background-color: #fff;
+  position: relative;
+}
+
+.card-img {
+  width: 200px;
+  height: auto;
+}
+
+.card-title {
+  color: #ddb96c;
+}
+
+.card-text {
+  max-width: 165px;
+}
+
+.collapse-text {
+  padding-top: 2rem;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 10px;
+}
+
+.btn[aria-expanded=true], [aria-expanded=true].btn-x {
+  display: none;
+}
+
+.btn-x {
+  display: none;
+}
+.btn-x[aria-expanded=true] {
+  display: block;
+}
+
+.btn-x:hover[aria-expanded=true] {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.animal-img {
+  width: 280px;
+  border: 5px solid #ddb96c;
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+
+.animal-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    max-width: 310px;
+  }
+
+  .animal-img {
+    width: 265px;
+  }
+}
