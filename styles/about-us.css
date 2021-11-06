@@ -29,8 +29,12 @@ body {
 
 .container {
   max-width: 1320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .panel {
@@ -38,6 +42,9 @@ body {
   background: #fff;
   border-radius: 0.75rem;
   padding: 2.5rem;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
+  margin-top: -1rem;
 }
 
 .content h2 {
@@ -108,14 +115,18 @@ body {
   max-width: 200px;
   border: 7px solid #fff;
   border-radius: 3px;
-  transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
   display: block;
+  -webkit-transition: var(--transform);
   transition: var(--transform);
 }
 
 .about-img.left:hover {
-  box-shadow: var(--left-right-shadow-color);
-  transform: var(--scale);
+  -webkit-box-shadow: var(--left-right-shadow-color);
+          box-shadow: var(--left-right-shadow-color);
+  -webkit-transform: var(--scale);
+          transform: var(--scale);
 }
 
 .about-img.right {
@@ -127,14 +138,18 @@ body {
   max-width: 200px;
   border: 7px solid #fff;
   border-radius: 3px;
-  transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
   display: block;
+  -webkit-transition: var(--transform);
   transition: var(--transform);
 }
 
 .about-img.right:hover {
-  box-shadow: var(--left-right-shadow-color);
-  transform: var(--scale);
+  -webkit-box-shadow: var(--left-right-shadow-color);
+          box-shadow: var(--left-right-shadow-color);
+  -webkit-transform: var(--scale);
+          transform: var(--scale);
 }
 
 .about-newsletter {
@@ -142,11 +157,13 @@ body {
   margin-top: 7rem;
   background-color: #ddb96c;
   border-radius: 0.5rem;
+  -webkit-transition: var(--transform);
   transition: var(--transform);
 }
 
 .about-newsletter:hover {
-  box-shadow: var(--left-right-shadow-color);
+  -webkit-box-shadow: var(--left-right-shadow-color);
+          box-shadow: var(--left-right-shadow-color);
 }
 
 .text-center h3 {
@@ -171,12 +188,15 @@ body {
   background-color: #6c90dd;
   margin-left: 0.5rem;
   border-radius: 28px 4px;
+  -webkit-transition: var(--transform);
   transition: var(--transform);
 }
 
 .btn:hover {
-  box-shadow: var(--transform);
-  transform: var(--scale);
+  -webkit-box-shadow: var(--transform);
+          box-shadow: var(--transform);
+  -webkit-transform: var(--scale);
+          transform: var(--scale);
 }
 
 .team {
@@ -212,8 +232,11 @@ body {
   }
 }
 .team ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   margin-top: 3rem;
   margin-right: auto;
@@ -224,25 +247,36 @@ body {
 
 .team ul li {
   list-style-type: none;
-  align-content: center;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   padding: 0.5rem;
 }
 
 .team ul li img {
   border-radius: 0.5rem;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: auto;
   margin: 0 auto 1.5rem;
+  -webkit-transition: var(--transform);
   transition: var(--transform);
   cursor: pointer;
 }
 
 .team ul li img:hover {
-  box-shadow: 0px 5px 5px rgba(165, 135, 4, 0.979);
-  transform: var(--scale);
+  -webkit-box-shadow: 0px 5px 5px rgba(165, 135, 4, 0.979);
+          box-shadow: 0px 5px 5px rgba(165, 135, 4, 0.979);
+  -webkit-transform: var(--scale);
+          transform: var(--scale);
 }
 
 @media (max-width: 780px) {
@@ -285,8 +319,10 @@ body {
 }
 
 .footer img:hover {
+  -webkit-transition: var(--transform);
   transition: var(--transform);
-  transform: var(--scale);
+  -webkit-transform: var(--scale);
+          transform: var(--scale);
 }
 
 .cat {
