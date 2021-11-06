@@ -1,0 +1,124 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    background-color: $background-color;
+}
+
+.container-fluid {
+    background-color: $main-color;
+    height: 12rem;
+}
+
+.entry-title {
+    font-family: $main-font-family;
+    color: $white;
+}
+
+.panel {
+    max-width: 800px;
+    position: relative;
+    top: -3rem;
+    background: $white;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 50px rgb(0 0 0 / 4%);
+}
+
+.panel-title {
+    font-family: $second-font-family;
+    color: $p-cl;
+}
+
+.panel-text {
+    @extend .panel-title;
+    padding: 0 1rem;
+}
+
+.btn {
+    background-color: $button-bg;
+    border-radius: 28px 4px;
+    color: $white;
+    border: none;
+}
+
+.btn:hover {
+    @include hover;
+    color: $white;
+}
+
+.link {
+    text-decoration: none;
+    color: $white;
+}
+
+.card {
+    min-height: 370px;
+    background-color: $white;
+    position: relative;
+}
+
+.card-img {
+    width: 200px;
+    height: auto;
+}
+
+.card-title {
+    @extend .entry-title;
+    color: $main-color;
+}
+
+.card-text {
+    @extend .panel-title;
+    max-width: 165px;
+}
+
+.collapse-text {
+    @extend .panel-title;
+    padding-top: 2rem;
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 10px;
+}
+
+.btn {
+    &[aria-expanded="true"] {
+        display: none;
+    }
+}
+
+.btn-x {
+    display: none;
+    @extend .btn;
+    &[aria-expanded="true"] {
+        display: block;
+    }
+}
+
+.btn-x:hover {
+    &[aria-expanded="true"] {
+        @include hover;
+    }
+}
+
+.animal-img {
+    width: 280px;
+    border: 5px solid $main-color;
+    border-radius: 4px;
+    margin: 0.5rem;
+}
+
+.animal-img:hover {
+    @include hover;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        max-width: 310px;
+    }
+
+    .animal-img {
+        width: 265px;
+    }
+}
