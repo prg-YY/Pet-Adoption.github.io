@@ -1,0 +1,32 @@
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.top-link h1 {
+  font-family: var(--second-font-family);
+  color: $mian-color;
+  margin-top: 1rem;
+}
+.top-link a {
+  font-size: 32px;
+}
+
+.container-card h5,
+p {
+  font-family: var(--second-font-family);
+  color: $p-cl;
+}
+.container-card img {
+  border-radius: 0.5rem;
+  flex-direction: row;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  transition: var(--transform);
+  cursor: pointer;
+}
+.container-card img:hover {
+  box-shadow: 0px 5px 5px rgba(165, 135, 4, 0.979);
+  transform: var(--scale);
+}

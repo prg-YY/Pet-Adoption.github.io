@@ -56,6 +56,10 @@ body {
     z-index: 1;
     border-radius: 10px;
     background-color: white;
+<<<<<<< HEAD
+=======
+    box-shadow: 15px 15px 25px black;
+>>>>>>> d791d8234c2828c7fd4cecb74f66e284e9400e9a
 }
 
 h1 {
@@ -72,10 +76,13 @@ p {
     font-size: 25px;
 }
 
+<<<<<<< HEAD
 /*
  * Will add media queries 
  * and adaptive images
  */
+=======
+>>>>>>> d791d8234c2828c7fd4cecb74f66e284e9400e9a
 .frame-container {
     width: 1440px;
     height: 630px;
@@ -116,7 +123,10 @@ p {
 .section-text {
     background-color: $white;
     padding: 60px;
+<<<<<<< HEAD
     border-radius: 10px;
+=======
+>>>>>>> d791d8234c2828c7fd4cecb74f66e284e9400e9a
 }
 
 /* <-- footer --> */
