@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../../styles/index.css">
+    <script src="https://kit.fontawesome.com/98dd1ba7b5.js" crossorigin="anonymous"></script>
     <title>All Animals</title>
 </head>
 <body>
@@ -50,26 +51,27 @@
           </div>
         </div>
       </header>
-    <section class="container-fluid py-5">
-        <h1 class="entry-title text-center">Animals</h1>
+    <section class="container-fluid py-5 d-flex justify-content-center">
+        <h1 class="entry-title">Animals</h1>
     </section>
 
-    <section class="container-sm d-flex justify-content-center">
+    <div class="container content">
+        <div class="col-lg-8 col-md-10">
         <div class="panel">
             <h3 id="page-top" class="panel-title pt-4 text-center">All Animals</h3>
             <p class="panel-text text-center">Here you can see all our animals that are currently up for adoption</p>
             <div class="p-2 d-flex flex-wrap justify-content-evenly">
 
                 <!-- Card 1 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/abby-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/abby-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbby" aria-expanded="false" aria-controls="collapseAbby">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Abby</h3>
-                            <p class="card-text"><strong>Age:</strong> 5<br>
+                            <h3 class="card-animal-title text-center">Abby</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 5<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Domestic Shorthair</p>
                         </div>
@@ -100,20 +102,20 @@
                         </div>
                     </div>
                     <div class="btn-container d-flex align-self-center">
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbby" aria-expanded="false" aria-controls="collapseAbby">
+                        <button class="btn btn-text" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbby" aria-expanded="false" aria-controls="collapseAbby">
                         Read More</button>
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/biscuit-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/biscuit-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBiscuit" aria-expanded="false" aria-controls="collapseBiscuit">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Biscuit</h3>
-                            <p class="card-text"><strong>Age:</strong> 1<br>
+                            <h3 class="card-animal-title text-center">Biscuit</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 1<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Syrian Hamster</p>
                         </div>
@@ -149,15 +151,15 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/brownie-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/brownie-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrownie" aria-expanded="false" aria-controls="collapseBrownie">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Brownie</h3>
-                            <p class="card-text"><strong>Age:</strong> 1<br>
+                            <h3 class="card-animal-title text-center">Brownie</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 1<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Holland Lop</p>
                         </div>
@@ -193,15 +195,15 @@
                     </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/charlie-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/charlie-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCharlie" aria-expanded="false" aria-controls="collapseCharlie">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Charlie</h3>
-                            <p class="card-text"><strong>Age:</strong> 6<br>
+                            <h3 class="card-animal-title text-center">Charlie</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 6<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Mixed breed</p>
                         </div>
@@ -238,15 +240,15 @@
                     </div>
                 </div>
                 <!-- Card 5 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/coco-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/coco-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoco" aria-expanded="false" aria-controls="collapseCoco">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Coco</h3>
-                            <p class="card-text"><strong>Age:</strong> 3,5<br>
+                            <h3 class="card-animal-title text-center">Coco</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 3,5<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Chihuahua</p>
                         </div>
@@ -282,15 +284,15 @@
                     </div>
                 </div>
                 <!-- Card 6 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/duncan-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/duncan-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDuncan" aria-expanded="false" aria-controls="collapseDuncan">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Duncan</h3>
-                            <p class="card-text"><strong>Age:</strong> 1<br>
+                            <h3 class="card-animal-title text-center">Duncan</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 1<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Abyssinean Guinea Pig</p>
                         </div>
@@ -327,15 +329,15 @@
                     </div>
                 </div>
                 <!-- Card 7 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/finn-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/finn-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinn" aria-expanded="false" aria-controls="collapseFinn">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Finn</h3>
-                            <p class="card-text"><strong>Age:</strong> 3<br>
+                            <h3 class="card-animal-title text-center">Finn</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 3<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Domestic Shorthair</p>
                         </div>
@@ -371,15 +373,15 @@
                     </div>
                 </div>
                 <!-- Card 8 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/hazel-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/hazel-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHazel" aria-expanded="false" aria-controls="collapseHazel">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Hazel</h3>
-                            <p class="card-text"><strong>Age:</strong> 6<br>
+                            <h3 class="card-animal-title text-center">Hazel</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 6<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Norwegian Forest Cat</p>
                         </div>
@@ -416,15 +418,15 @@
                     </div>
                 </div>
                 <!-- Card 9 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/lily-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/lily-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLily" aria-expanded="false" aria-controls="collapseLily">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Lily</h3>
-                            <p class="card-text"><strong>Age:</strong> 1,5<br>
+                            <h3 class="card-animal-title text-center">Lily</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 1,5<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Dutch Rabbit</p>
                         </div>
@@ -460,15 +462,15 @@
                     </div>
                 </div>
                 <!-- Card 10 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/max-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/max-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMax" aria-expanded="false" aria-controls="collapseMax">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Max</h3>
-                            <p class="card-text"><strong>Age:</strong> 3<br>
+                            <h3 class="card-animal-title text-center">Max</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 3<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Labrador</p>
                         </div>
@@ -505,15 +507,15 @@
                     </div>
                 </div>
                 <!-- Card 11 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/milo-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/milo-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMilo" aria-expanded="false" aria-controls="collapseMilo">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Milo</h3>
-                            <p class="card-text"><strong>Age:</strong> 8<br>
+                            <h3 class="card-animal-title text-center">Milo</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 8<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> British Shorthair</p>
                         </div>
@@ -550,15 +552,15 @@
                     </div>
                 </div>
                 <!-- Card 12 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/molly-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/molly-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMolly" aria-expanded="false" aria-controls="collapseMolly">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Molly</h3>
-                            <p class="card-text"><strong>Age:</strong> 7<br>
+                            <h3 class="card-animal-title text-center">Molly</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 7<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Chihuahua</p>
                         </div>
@@ -594,15 +596,15 @@
                     </div>
                 </div>
                 <!-- Card 13 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/oliver-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/oliver-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOliver" aria-expanded="false" aria-controls="collapseOliver">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Oliver</h3>
-                            <p class="card-text"><strong>Age:</strong> 6<br>
+                            <h3 class="card-animal-title text-center">Oliver</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 6<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Mixed breed</p>
                         </div>
@@ -638,15 +640,15 @@
                     </div>
                 </div>
                 <!-- Card 14 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/oreo-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/oreo-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOreo" aria-expanded="false" aria-controls="collapseOreo">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Oreo</h3>
-                            <p class="card-text"><strong>Age:</strong> 9<br>
+                            <h3 class="card-animal-title text-center">Oreo</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 9<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Domestic Shorthair</p>
                         </div>
@@ -683,15 +685,15 @@
                     </div>
                 </div>
                 <!-- Card 15 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/paddy-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/paddy-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePaddy" aria-expanded="false" aria-controls="collapsePaddy">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Paddy</h3>
-                            <p class="card-text"><strong>Age:</strong> 2<br>
+                            <h3 class="card-animal-title text-center">Paddy</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 2<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Budgerigar</p>
                         </div>
@@ -727,15 +729,15 @@
                     </div>
                 </div>
                 <!-- Card 16 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/pip-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/pip-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePip" aria-expanded="false" aria-controls="collapsePip">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Pip</h3>
-                            <p class="card-text"><strong>Age:</strong> 0,5<br>
+                            <h3 class="card-animal-title text-center">Pip</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 0,5<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> American Guinea Pig</p>
                         </div>
@@ -771,15 +773,15 @@
                     </div>
                 </div>
                 <!-- Card 17 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/spot-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/spot-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpot" aria-expanded="false" aria-controls="collapseSpot">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Spot</h3>
-                            <p class="card-text"><strong>Age:</strong> 2,5<br>
+                            <h3 class="card-animal-title text-center">Spot</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 2,5<br>
                             <strong>Sex:</strong> Male<br>
                             <strong>Breed:</strong> Mixed breed</p>
                         </div>
@@ -815,15 +817,15 @@
                     </div>
                 </div>
                 <!-- Card 18 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/sunny-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/sunny-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSunny" aria-expanded="false" aria-controls="collapseSunny">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Sunny</h3>
-                            <p class="card-text"><strong>Age:</strong> 11<br>
+                            <h3 class="card-animal-title text-center">Sunny</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 11<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Domestic Shorthair</p>
                         </div>
@@ -859,15 +861,15 @@
                     </div>
                 </div>
                 <!-- Card 19 -->
-                <div class="card p-2 m-3">
+                <div class="card card-animal p-2 m-3">
                     <div class="d-flex justify-content-between align-items-start">
-                        <img class="card-img" src="../../images/Animals/trixie-1.jpg" alt="">
+                        <img class="card-animal-img" src="../../images/Animals/trixie-1.jpg" alt="">
                         <button class="btn-x px-3 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrixie" aria-expanded="false" aria-controls="collapseTrixie">X</button>
                     </div>
                     <div class="card-body">
                         <div>
-                            <h3 class="card-title text-center">Trixie</h3>
-                            <p class="card-text"><strong>Age:</strong> 0,5<br>
+                            <h3 class="card-animal-title text-center">Trixie</h3>
+                            <p class="card-animal-text"><strong>Age:</strong> 0,5<br>
                             <strong>Sex:</strong> Female<br>
                             <strong>Breed:</strong> Winter White Hamster</p>
                         </div>
@@ -909,55 +911,56 @@
                 </button>
             </div>
         </div>
-    </section>
-    <!-- footer -->
-    <div class="footer col-lg-8 col-md-10 p-3 w-100 d-flex justify-content-center">
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-          <div class="row">
-            <div class="col-6 col-md">
-              <img
-                class="mb-4"
-                src="../../images/jousuf-footet-logo.png"
-                alt=""
-                width="94"
-                height="94"
-              />
-              <small class="d-block mb-3 text-muted">© 2021-2022</small>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Features</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Cool stuff</a></li>
-                <li><a class="text-muted" href="#">Random feature</a></li>
-                <li><a class="text-muted" href="#">Team feature</a></li>
-                <li>
-                  <a class="text-muted" href="#">Stuff for developers</a>
-                </li>
-                <li><a class="text-muted" href="#">Another one</a></li>
-                <li><a class="text-muted" href="#">Last time</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Resources</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Resource</a></li>
-                <li><a class="text-muted" href="#">Resource name</a></li>
-                <li><a class="text-muted" href="#">Another resource</a></li>
-                <li><a class="text-muted" href="#">Final resource</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>About</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Team</a></li>
-                <li><a class="text-muted" href="#">Locations</a></li>
-                <li><a class="text-muted" href="#">Privacy</a></li>
-                <li><a class="text-muted" href="#">Terms</a></li>
-              </ul>
-            </div>
+        <div class="footer">
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+              <div class="row">
+                <div class="col-6 col-md">
+                  <img
+                    class="mb-4"
+                    src="../../images/jousuf-footet-logo.png"
+                    alt=""
+                    width="94"
+                    height="94"
+                  />
+                  <small class="d-block mb-3 text-muted">© 2021-2022</small>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Features</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Team feature</a></li>
+                    <li>
+                      <a class="text-muted" href="#">Stuff for developers</a>
+                    </li>
+                    <li><a class="text-muted" href="#">Another one</a></li>
+                    <li><a class="text-muted" href="#">Last time</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Resources</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Another resource</a></li>
+                    <li><a class="text-muted" href="#">Final resource</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>About</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
           </div>
-        </footer>
-      </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
