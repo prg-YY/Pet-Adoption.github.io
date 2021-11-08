@@ -21,6 +21,7 @@ body {
 
 .link {
     text-decoration: none;
+    color: #212529;
 }
 
 .card-animal {
@@ -45,7 +46,7 @@ body {
 .card-animal-text {
     @extend .panel-title;
     max-width: 165px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .collapse-text {
@@ -91,8 +92,8 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-    .card {
-        max-width: 310px;
+    .card-animal {
+        width: 300px;
     }
 
     .animal-img {
