@@ -1,18 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Zen+Maru+Gothic:wght@300&display=swap");
-:root {
-  --left-right-shadow-color: 0px 10px 30px rgba(165, 135, 4, 0.979);
-  --transform: transform 0.4s ease;
-  --scale: scale(1.1);
-  --main-font-family: "Fascinate", sans-serif;
-  --second-font-family: "Zen+Maru+Gothic", sans-serif;
-}
-$backgrou-color: #f1f6fa;
-$mian-color: #ddb96c;
-$button-bg: #6c90dd;
-$button-hover-bg: #9ab4ec;
-$p-cl: #999;
-$white: #fff;
-
 @keyframes autoplay1 {
     0% {
         opacity: 0.0;
@@ -31,11 +16,14 @@ $white: #fff;
     }
 }
 
+<<<<<<< HEAD
 body {
     background-color: $backgrou-color;
 }
 
 /* <--Slide - img--> */
+=======
+>>>>>>> 53be5af141b9143808aeaf689c36fecdae6ec117
 .slide-home {
     position: relative;
     display: flex;
@@ -60,20 +48,27 @@ body {
     box-shadow: 15px 15px 25px black;
 }
 
-h1 {
+.home-title {
     display: flex;
     color: #ddb96c;
     font-size: 50px;
     line-height: 40px;
 }
 
-p {
+.home-text {
     display: flex;
     justify-self: center;
     color: #ddb96c;
     font-size: 25px;
 }
 
+<<<<<<< HEAD
+=======
+/*
+ * Will add media queries 
+ * and adaptive images
+ */
+>>>>>>> 53be5af141b9143808aeaf689c36fecdae6ec117
 
 .frame-container {
     width: 1440px;
@@ -116,34 +111,5 @@ p {
 .section-text {
     background-color: $white;
     padding: 60px;
+    border-radius: 10px;
 }
-
-/* <-- footer --> */
-
-.footer h5 {
-    font-family: var(--main-font-family);
-    color: $mian-color;
-    font-size: 28px;
-  }
-  @media (max-width: 780px) {
-    .footer h5 {
-      font-size: 22px;
-    }
-  }
-  .footer li a {
-    text-decoration: none;
-    font-family: var(--second-font-family);
-    line-height: 2;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
-  .footer img {
-    margin-right: 100px;
-  }
-  .footer img:hover {
-    transition: var(--transform);
-    transform: var(--scale);
-  }
-  .cat {
-    margin-top: 2rem;
-  }
