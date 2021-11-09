@@ -35,6 +35,7 @@ body {
     background-color: $backgrou-color;
 }
 
+/* <--Slide - img--> */
 .slide-home {
     position: relative;
     display: flex;
@@ -73,6 +74,7 @@ p {
     font-size: 25px;
 }
 
+
 .frame-container {
     width: 1440px;
     height: 630px;
@@ -102,6 +104,7 @@ p {
 .slide4 {
     animation-delay: 24s;
 }
+/* <--Slide - end--> */
 
 .section-container {
     position: relative;
