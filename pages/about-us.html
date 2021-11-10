@@ -14,8 +14,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="../styles/about-us.css" />
-    <link rel="stylesheet" href="../styles/index.css" />
+    <!-- <link rel="stylesheet" href="../styles/about-us.css" /> -->
+    <link rel="stylesheet" href="../styles/index.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
   </head>
@@ -24,8 +24,10 @@
     <header>
       <div class="header-wrapper">
         <div class="logo">
-          <i class="fas fa-paw fa-4x logo__icon"></i>
-          <p class="logo__text">PetDop</p>
+          <a class="logo-link" href="../index.html">
+            <i class="fas fa-paw fa-4x logo__icon"></i>
+            <p class="logo__text">PetDop</p>
+          </a>
         </div>
         <div class="nav-bar-wrapper">
           <nav>
@@ -42,13 +44,13 @@
                 <a class="nav-link" href="../pages/about-us.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Animals</a>
+                <a class="nav-link" href="../pages/animals.html">Animals</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/adopt.html">Adopt</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="../pages/contact-us.html">Contact</a>
               </li>
             </ul>
             <div class="dropdown">
@@ -62,11 +64,11 @@
                 Menu
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Home</a></li>
-                <li><a class="dropdown-item" href="#">About Us</a></li>
-                <li><a class="dropdown-item" href="#">Animals</a></li>
-                <li><a class="dropdown-item" href="#">Adopt</a></li>
-                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                <li><a class="dropdown-item" href="../pages/about-us.html">About Us</a></li>
+                <li><a class="dropdown-item" href="../pages/animals.html">Animals</a></li>
+                <li><a class="dropdown-item" href="../pages/adopt.html">Adopt</a></li>
+                <li><a class="dropdown-item" href="../pages/contact-us.html">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -85,7 +87,7 @@
           <div class="entry-content">
             <h2>
               <span
-                >We created Get Your Pet in response to a number: 2.5
+                >We created PetDop in response to a number: 2.5
                 million.</span
               >
             </h2>
@@ -101,7 +103,7 @@
             <p>And so, millions are euthanized.</p>
             <p>
               We are determined that things don’t have to be this way. Not in
-              our 21st century, web-connected world. So we created Get Your Pet,
+              our 21st century, web-connected world. So we created PetDop,
               an online community where people who can’t keep their pets connect
               directly with people who want to adopt a pet.
             </p>
@@ -130,7 +132,7 @@
         <section class="about-newsletter pt-xl-5">
           <div class="row">
             <div class="col-12 text-center">
-              <h3>Subscribe to our Nesletter</h3>
+              <h3>Subscribe to our Newsletter</h3>
               <div class="input-group p-md-2">
                 <input
                   type="email"

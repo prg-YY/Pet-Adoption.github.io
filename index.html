@@ -11,6 +11,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
   />
+  <script src="https://kit.fontawesome.com/98dd1ba7b5.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
   <link rel="stylesheet" href="styles/index.css"> 
   <title>PetDop</title>
@@ -20,26 +21,28 @@
   <header>
     <div class="header-wrapper">
       <div class="logo">
-        <i class="fas fa-paw fa-4x logo__icon"></i>
-        <p class="logo__text">PetDop</p>
+        <a class="logo-link" href="index.html">
+          <i class="fas fa-paw fa-4x logo__icon"></i>
+          <p class="logo__text">PetDop</p>
+        </a>
       </div>
       <div class="nav-bar-wrapper">
         <nav>
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="pages/about-us.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Animals</a>
+              <a class="nav-link" href="pages/animals.html">Animals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Adopt</a>
+              <a class="nav-link" href="pages/adopt.html">Adopt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="pages/contact-us.html">Contact</a>
             </li>
           </ul>
           <div class="dropdown">
@@ -48,11 +51,11 @@
               Menu
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Home</a></li>
-              <li><a class="dropdown-item" href="#">About Us</a></li>
-              <li><a class="dropdown-item" href="#">Animals</a></li>
-              <li><a class="dropdown-item" href="#">Adopt</a></li>
-              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="pages/about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="pages/animals/all.html">Animals</a></li>
+              <li><a class="dropdown-item" href="pages/adopt.html">Adopt</a></li>
+              <li><a class="dropdown-item" href="pages/contact-us.html">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -81,8 +84,25 @@
 
   <section class="section-container">
     <div class="section-text">
-      <h2>Why animals are truly your best friends</h2>
-      <p class="home-text">Hfsjkdghf ahfjkdhfjd akljdljg jggjgj gklf gl glgldlgd gg</p>
+      <h2>Why adopt instead of "shop"?</h2>
+      <p class="home-text">There are thousands of stray animals out there just waiting for a loving family!</p>
+    </div>
+  </section>
+  <section class="about-newsletter pt-xl-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Subscribe to our Newsletter</h3>
+        <div class="input-group p-md-2">
+          <input
+            type="email"
+            class="form-control p-md-2"
+            placeholder="Enter Your Email"
+          />
+          <span class="input-group-btn">
+            <button class="btn" type="submit">Subscribe</button>
+          </span>
+        </div>
+      </div>
     </div>
   </section>
 

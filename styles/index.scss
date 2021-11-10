@@ -15,6 +15,10 @@
   $white: #fff;
 
 
+.logo-link {
+  text-decoration: none;
+}
+
 @import 'header';
 @import 'home-page';
 @import 'about-us';
