@@ -1,0 +1,102 @@
+@import 'mixins';
+
+body {
+    background-color: $backgrou-color;
+}
+
+.container-fluid {
+    background-color: $mian-color;
+    height: 12rem;
+}
+
+.panel-title {
+    font-family: var(--second-font-family);
+    color: $p-cl;
+}
+
+.panel-text {
+    @extend .panel-title;
+    padding: 0 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #212529;
+}
+
+.card-animal {
+    width: fit-content;
+    min-height: 400px;
+    background-color: $white;
+    position: relative;
+}
+
+.card-animal-img {
+    max-width: 200px;
+    height: auto;
+}
+
+.card-animal-title {
+    @extend .entry-title;
+    color: $mian-color;
+    font-size: 24px;
+}
+
+.card-body
+.card-animal-text {
+    @extend .panel-title;
+    max-width: 165px;
+    font-size: 16px;
+}
+
+.collapse-text {
+    @extend .panel-title;
+    padding-top: 2rem;
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 10px;
+}
+
+.btn {
+    &[aria-expanded="true"] {
+        display: none;
+    }
+}
+
+.btn-x {
+    display: none;
+    @extend .btn;
+    border: none;
+    &[aria-expanded="true"] {
+        display: block;
+    }
+}
+
+.btn-x:hover {
+    &[aria-expanded="true"] {
+        @include hover;
+    }
+}
+
+.animal-img {
+    max-width: 280px;
+    border: 5px solid $mian-color;
+    border-radius: 4px;
+    margin: 0.5rem;
+}
+
+.animal-img:hover {
+    @include hover;
+}
+
+@media screen and (max-width: 400px) {
+    .card-animal {
+        width: 300px;
+    }
+
+    .animal-img {
+        width: 265px;
+    }
+}

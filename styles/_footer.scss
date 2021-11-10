@@ -1,0 +1,27 @@
+.footer h5 {
+    font-family: var(--main-font-family);
+    color: #ddb96c;
+    font-size: 28px;
+  }
+  
+  @media (max-width: 780px) {
+    .footer h5 {
+      font-size: 22px;
+    }
+  }
+  .footer li a {
+    text-decoration: none;
+    font-family: var(--second-font-family);
+    line-height: 2;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .footer img {
+    margin-right: 100px;
+  }
+  
+  .footer img:hover {
+    transition: var(--transform);
+    transform: var(--scale);
+  }

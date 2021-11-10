@@ -1,0 +1,103 @@
+@keyframes autoplay1 {
+    0% {
+        opacity: 0.0;
+    }
+    4% {
+        opacity: 1.0;
+    }
+    33% {
+        opacity: 1.0;
+    }
+    37% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+.slide-home {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 630;
+    overflow: hidden;
+    align-content: center;
+}
+
+.title-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 15px 15px 25px black;
+}
+
+.home-title {
+    display: flex;
+    color: #ddb96c;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.home-text {
+    display: flex;
+    justify-self: center;
+    color: #ddb96c;
+    font-size: 25px;
+}
+
+/*
+ * Will add media queries 
+ * and adaptive images
+ */
+
+.frame-container {
+    width: 1440px;
+    height: 630px;
+    overflow: hidden;
+}
+
+.slide1, .slide2, .slide3, .slide4 {
+    animation: 24s autoplay1 infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+}
+
+.slide1 {
+    animation-delay: 0s;
+}
+
+.slide2 {
+    animation-delay: 8s;
+}
+
+.slide3 {
+    animation-delay: 16s;
+}
+
+.slide4 {
+    animation-delay: 24s;
+}
+
+.section-container {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section-text {
+    background-color: $white;
+    padding: 60px;
+    border-radius: 10px;
+}
