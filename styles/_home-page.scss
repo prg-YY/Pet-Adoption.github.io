@@ -16,53 +16,92 @@
     }
 }
 
+/* <--animation scale-in-center--> */
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+body {
+    background-color: $backgrou-color;
+}
+
+/* <--Slide - img--> */
+
 .slide-home {
     position: relative;
     display: flex;
     width: 100%;
-    height: 630;
+    height: 200px;
     overflow: hidden;
     align-content: center;
 }
 
 .title-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
-    width: 350px;
-    height: 200px;
-    z-index: 1;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 15px 15px 25px black;
+    display: none;
 }
-
-.home-title {
-    display: flex;
-    color: #ddb96c;
-    font-size: 50px;
-    line-height: 40px;
-}
-
-.home-text {
-    display: flex;
-    justify-self: center;
-    color: #ddb96c;
-    font-size: 25px;
-}
-
-/*
- * Will add media queries 
- * and adaptive images
- */
 
 .frame-container {
-    width: 1440px;
-    height: 630px;
+    width: 100%;
     overflow: hidden;
+    align-items: center;
 }
 
 .slide1, .slide2, .slide3, .slide4 {
@@ -89,6 +128,40 @@
     animation-delay: 24s;
 }
 
+.container-mobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+
+    .title-container-mobile {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: white;
+        -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .home-title-mobile {
+        display: flex;
+        justify-content: center;
+        color: $mian-color;
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .home-text-mobile {
+        display: flex;
+        justify-content: center;
+        color: $p-cl;
+        font-size: 15px;
+    }
+}
+
 .section-container {
     position: relative;
     bottom: 0;
@@ -98,6 +171,123 @@
 
 .section-text {
     background-color: $white;
-    padding: 60px;
+    margin-top: 5px;
+    padding: 50px;
     border-radius: 10px;
+    max-width: 100%;
+    justify-content: center;
+
+    
+    h2 {
+        max-width: 100%;
+        font-size: 30px;
+        color: $mian-color;
+        line-height: 1.4;
+        letter-spacing: -0.1px;
+        text-align: center;
+    }
+
+    .home-text {
+        font-size: 19px;
+        font-family: var(--second-font-family);
+        color: $p-cl;
+        line-height: 1.7;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
 }
+
+.btn-container-home {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+} 
+
+@media only screen and (min-width: 450px) {
+    .slide-home {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 730px) {
+    .slide-home {
+        height: 370px;
+    }
+
+    .title-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        width: 250px;
+        height: 150px;
+        z-index: 1;
+        border-radius: 10px;
+        background-color: white;
+        -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    .home-title {
+        display: flex;
+        color: #ddb96c;
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .home-text {
+        display: flex;
+        justify-self: center;
+        color: #ddb96c;
+        font-size: 25px;
+    }
+
+    .section-container {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    .section-text {
+        background-color: $white;
+        padding: 60px;
+        border-radius: 10px;
+        box-shadow: var(--left-right-shadow-color);
+
+        .section-container:hover {
+            box-shadow: var(--transform);
+            transform: var(--scale);
+        }
+    }
+
+    .container-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .slide-home {
+        height: 420px;
+    }
+}
+
+/*
+ * Will add media queries 
+ * and adaptive images
+ */
