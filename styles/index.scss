@@ -26,3 +26,9 @@
 @import 'animals';
 @import 'footer';
 @import 'contact-us';
+
+@media screen and (max-width: 400px) {
+  .logo {
+      width: 50%;
+  }
+}
