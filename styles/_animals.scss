@@ -22,6 +22,11 @@ body {
 .animal-menu {
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width: 400px) {
+        flex-direction: column;
+        max-width: 30%;
+        margin: auto;
+    }
 }
 
 .link {
