@@ -6,7 +6,7 @@ body {
 
 .container-fluid {
     background-color: $mian-color;
-    height: 12rem;
+    height: 7rem;
 }
 
 .panel-title {
@@ -22,18 +22,14 @@ body {
 .animal-menu {
     display: flex;
     justify-content: space-around;
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-.take-me-back-button {
-    justify-self: center;
 }
 
 .link {
     text-decoration: none;
+    color: $white;
+}
+
+.link:hover {
     color: $white;
 }
 
@@ -52,14 +48,14 @@ body {
 .card-animal-title {
     @extend .entry-title;
     color: $mian-color;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .card-body
 .card-animal-text {
     @extend .panel-title;
     max-width: 165px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .collapse-text {

@@ -154,6 +154,7 @@ body {
 .btn:hover {
   box-shadow: var(--transform);
   transform: var(--scale);
+  color: $white;
 }
 
 // input-end
