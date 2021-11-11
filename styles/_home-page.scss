@@ -268,12 +268,6 @@ body {
         background-color: $white;
         padding: 60px;
         border-radius: 10px;
-        box-shadow: var(--left-right-shadow-color);
-
-        .section-container:hover {
-            box-shadow: var(--transform);
-            transform: var(--scale);
-        }
     }
 
     .container-mobile {
